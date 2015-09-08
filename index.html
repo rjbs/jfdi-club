@@ -9,11 +9,49 @@
      margin-top: 20%;
      font-size: 750%;
    }
+
+   div.lbSubsBubble { margin-left:auto; margin-right:auto; }
+   th { color: #fff; text-align: left; padding-right: 2em; }
+   input.form-control { min-width: 20em }
   </style>
 </head>
 <body style='background-color:#800000'>
 <div id="thinger">
   jfdi
 </div>
+
+<div id="form">
+  <link rel="stylesheet" href="//www.listbox.com/css/lb-subs.css" />
+  <div class="lbSubsBubble">
+  <form id="listbox_subscribe" method="post" action="http://www.listbox.com/subscribe/" >
+    <a name='#listbox-sub-error'></a>
+    <a name='#listbox-sub-okay'></a>
+    <div id='insertHere'></div>
+    <table align='center'>
+    <tr>
+      <th><label for="username" >Email&nbsp;Address</label></th>
+      <td><input class="form-control" id="username" name="username" type="text" /></td>
+    </tr>
+
+    <tr>
+      <th><label>Steam&nbsp;ID</label></th>
+      <td><input class="form-control" name="member_info_Steam ID" type="text" /></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" align=center>
+        <input class="lbBtn" type="submit" value="Subscribe" />
+      </td>
+    </tr>
+    </table>
+
+    <input id="action" name="action" type="hidden" value="subscribe" />
+    <input name="list_id" type="hidden" value="270574" />
+    <input name="redirect" type="hidden" value="listbox" />
+  </form>
+  </div>
+</div>
+
+
 </body>
 </html>
